@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Intelligence & Analytics Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #374151;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a3e635;
+    }
+    main {
+      padding: 40px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .toolbox-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .toolbox-btn:hover {
+      background-color: #1d4ed8;
+    }
+    .tool-output {
+      margin-top: 10px;
+      padding: 15px;
+      background: #e5e7eb;
+      border-left: 5px solid #2563eb;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Business Intelligence & Analytics Group</h1>
+    <p>Turning questions into data, and data into strategy.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#toolbox">Toolbox</a>
+    <a href="#goals">Our Goals</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We're a new, forward-thinking team passionate about using data to drive change. 
+        While we're in our early stages, we're focused on building a foundation for powerful 
+        reporting tools, custom dashboards, and impactful business intelligence systems.
+      </p>
+    </section>
+
+    <section id="toolbox">
+      <h2>Interactive Toolbox (Demo)</h2>
+      <p>Try out the demo tools we plan to expand on in the future:</p>
+      <button class="toolbox-btn" onclick="toggleTool('insight')">Insight Generator</button>
+      <button class="toolbox-btn" onclick="toggleTool('scorecard')">Scorecard Builder</button>
+      <div id="insight" class="tool-output">🔍 Example insight: Customer churn is highest in Q2 for premium members.</div>
+      <div id="scorecard" class="tool-output">📊 Scorecard demo: Sales growth at +12% vs goal of +10%.</div>
+    </section>
+
+    <section id="goals">
+      <h2>Our Goals</h2>
+      <ul>
+        <li>📌 Build a reliable internal data portal for reporting and analysis</li>
+        <li>📌 Create templates for recurring insights and KPIs</li>
+        <li>📌 Develop interactive dashboards with real-time data feeds</li>
+        <li>📌 Promote data literacy across departments</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:bi.analytics@gmail.com">bi.analytics@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Business Intelligence & Analytics Group</p>
+  </footer>
+
+  <script>
+    function toggleTool(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
